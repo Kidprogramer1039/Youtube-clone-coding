@@ -37,4 +37,15 @@ header .title__left {
   right: 20px;
 }
 
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  position: center;
+}
 
+.info .hashtag {
+  display: flex;
+  color: var(--blue-color);
+  font-size: var(--font-small);
+}
