@@ -1,0 +1,35 @@
+:root {
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  --side-padding: 12px;
+  --avatar-size: 36px;
+
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  color: var(--white-color);
+}
+
+header .title i {
+  color: var(--red-color);
+}
+
+
+
+
