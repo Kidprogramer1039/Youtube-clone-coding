@@ -23,13 +23,18 @@ header {
   position: sticky;
   justify-content: space-between;
   top: 0;
+  padding: var(--size-padding);
+  background-color: var(--black-color);
   color: var(--white-color);
+  font-size: var(--font-large);
 }
 
 header .title i {
   color: var(--red-color);
 }
 
-
+header .title__left {
+  right: 20px;
+}
 
 
