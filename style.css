@@ -59,9 +59,16 @@ header .title__left {
   font-size: var(--font-small);
 }
 
+.info .titleAndBtn .title {
+  width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
 .info .titleAndBtn .moreBtn {
+  height:100%
   display: flex;
-  
 }
 
 .thumb {
