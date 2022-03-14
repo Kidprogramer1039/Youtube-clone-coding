@@ -98,5 +98,7 @@ button:focus {
 }
 
 .thumb button i {
+  margin: 0 auto;
   margin-buttom: calc(var(--size-padding) / 2);
+  font-size: 16px;
 }
