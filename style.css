@@ -6,8 +6,10 @@
   --grey-dark-color: #909090;
   --grey-light-color: #e0e0e0;
 
+
   --side-padding: 12px;
   --avatar-size: 36px;
+
 
   --font-large: 18px;
   --font-medium: 14px;
@@ -34,18 +36,42 @@ header .title i {
 }
 
 header .title__left {
-  right: 20px;
+  margin-right: var(--size-padding);
 }
 
+.player{
+  position: center;
+  background-color: var(--black-color);
+}
 .player video {
   width: 100%;
   height: 100%;
   max-width: 1000px;
-  position: center;
+}
+
+.info {
+  padding: var(--size-padding);
 }
 
 .info .hashtag {
   display: flex;
   color: var(--blue-color);
   font-size: var(--font-small);
+}
+
+.info .titleAndBtn .moreBtn {
+  display: flex;
+  
+}
+
+.thumb {
+  display: flex;
+  justify-content: space-around;
+}
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
