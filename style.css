@@ -102,3 +102,15 @@ button:focus {
   margin-buttom: calc(var(--size-padding) / 2);
   font-size: 16px;
 }
+
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile .picture {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
