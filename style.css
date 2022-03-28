@@ -17,100 +17,76 @@
   --font-micro: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 li {
   list-style: none;
 }
 
+body {
+  font: roboto;
+}
+
 header {
-  position: sticky;
+  display: flex;
   justify-content: space-between;
-  top: 0;
   padding: var(--size-padding);
   background-color: var(--black-color);
   color: var(--white-color);
+}
+
+header .title {
   font-size: var(--font-large);
 }
 
-header .title i {
-  color: var(--red-color);
-}
-
 header .search {
-  margin-right: var(--size-padding);
+  margin-right: vsr(--size-padding);
 }
 
 .player {
-  position: center;
+  text-align: center;
   background-color: var(--black-color);
+  position: sticky;
+  top: 0;
 }
+
 .player video {
   width: 100%;
   height: 100%;
   max-width: 1000px;
 }
 
-.info {
-  padding: var(--size-padding);
-}
-
-.info .hashtag {
+.info .metadata .hashtags {
   display: flex;
   color: var(--blue-color);
   font-size: var(--font-small);
 }
 
-.info .titleAndBtn .title {
-  width: 300px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
+.info .metadata .hashtags li {
   margin-right: var(--size-padding);
 }
 
-.info .titleAndBtn .moreBtn {
-  height:100%
-  display: flex;
-}
-
-.info .titleAndBtn .views {
-  font-size: var(--font-small);
-  color: var(--grey-dark-color);
-} 
-
-.thumb {
-  display: flex;
-  justify-content: space-around;
-  padding-left: 0;
-}
-
-button,
-button:focus {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.action button {
-  display: flex;
-  flex-direction: column;
-  font-size: var(--font-small);
-}
-
-.action button i {
-  margin: 0 auto;
-  margin-buttom: calc(var(--size-padding) / 2);
-  font-size: 16px;
-}
-
-
-.profile {
+.info .metadata .titleAndBtn {
   display: flex;
   justify-content: space-between;
 }
 
-.profile .picture {
-  width: var(--avatar-size);
-  height: var(--avatar-size);
-  border-radius: 50%;
+.info .metadata .view {
+  font-size: vsr(--font-small);
+}
+
+.info .metadata .titleAndBtn .title {
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metadata .titleAndBtn button {
+  margin-right= var(--size-padding);
 }
